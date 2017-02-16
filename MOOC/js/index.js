@@ -133,33 +133,27 @@ window.onload=function(){
 	   			oBannerImg,{opacity:0.6}
 	   		}})
 	   	}})
-	}	
+	}
 
 	function getByClass(obj,sClass){
 		if(obj.getElementsByClassName){
 			return obj.getElementsByClassName(sClass);
-		}
-		else{
+		}else{
 			var aEle=obj.getElementsByTagName('*');
-			var arr=[];
-			for(var i=0;i<aEle.lenght;i++){
-				var _temp=aEle[i].className.split(' ');
-				if(findInArr(sClass,_temp)){
-					arr.push(aEle[i]);
+			var result=[];
+			for(var i=0;i<aEle.length;i++){
+				var arr=aEle[i].className.split(' ');
+				for(var j=0;j<arr.length;j++){
+					if(arr[j]==sClass){
+						result.push(aEle[i]);
+						break;
+					}
 				}
 			}
-			return arr;
+			return result;
 		}
-	}
 
-	function findInArr(item,arr){
-		for(var i=0;i<arr.length;i++){
-			if(item==arr[i]){
-				return true;
-			}
-		}
-		return false;
-	}
+	}	
 	 
 }  
 
