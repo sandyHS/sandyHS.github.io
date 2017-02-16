@@ -372,6 +372,7 @@ span.rs{
 }
 #course .details .content{
 	position:relative;
+	top:0;
 	/*z-index:2;*/
 }   
 #course .details .zhezhao{
@@ -398,7 +399,7 @@ span.rs{
 }
 #course .details .content .intro{
 	margin-left:10px;
-	margin-top:15px; 
+	margin-top:18px; 
 }
 #course .moreclass .inner{
 	text-align: center;
