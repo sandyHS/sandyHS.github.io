@@ -5,7 +5,9 @@ body,p,h1,h2,ul,ol{
 	padding:0;
 }
 input{
-	outline:none;	
+	outline:none;
+	margin:0;
+	padding:0;
 }
 a{
 	color:#000;
