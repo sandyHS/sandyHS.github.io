@@ -45,7 +45,7 @@ window.onload=function(){
 	   	move(oRs,{opacity:0});
 	   	timer=setInterval(function(){
 	   		next();
-	   	},2500);
+	   	},1000);
 	};
 	//左键切广告
 	oLs.onclick=function(){
@@ -60,7 +60,7 @@ window.onload=function(){
 	var timer=null;
 	timer=setInterval(function(){
 	   	next();
-	},3000);
+	},1000);
 
 	//精品推荐
 	var oContent=getByClass(document,'content')[0];
